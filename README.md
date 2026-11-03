@@ -17,4 +17,3 @@ jadwal belajar
 ## Tautan
 - Website: menyusul setelah *deploy* ke Vercel
 - Dibuat oleh: Andi Pratama, SMK Mitra
-## Pengembangan
