@@ -23,7 +23,9 @@ body {
   background-color: #F1FAEE;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: "Poppins", Arial, sans-serif;
   color: #1D3557;
   line-height: 1.3;
@@ -33,7 +35,9 @@ h2 {
   margin-bottom: 0.75rem;
 }
 
-p, ul, ol {
+p,
+ul,
+ol {
   margin-bottom: 1rem;
 }
 
@@ -172,7 +176,8 @@ caption {
   margin-bottom: 0.5rem;
 }
 
-th, td {
+th,
+td {
   border: 1px solid #CCCCCC;
   padding: 0.5rem 0.75rem;
   text-align: left;
@@ -188,7 +193,9 @@ label {
   font-weight: 600;
 }
 
-input, select, textarea {
+input,
+select,
+textarea {
   width: 100%;
   max-width: 22rem;
   padding: 0.6rem;
@@ -261,4 +268,104 @@ footer a {
   .hero h2 {
     font-size: 2.75rem;
   }
+}
+
+/* =================================
+   TAMBAHAN MODUL P1-W07
+   ================================= */
+
+/* Tombol mode gelap */
+body {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#tombol-tema {
+  padding: 0.6rem 1rem;
+  background-color: #E63946;
+  color: white;
+}
+
+/* Tampilan mode gelap */
+body.gelap {
+  background-color: #172033;
+  color: #F1FAEE;
+}
+
+body.gelap h1,
+body.gelap h2,
+body.gelap h3 {
+  color: #F1FAEE;
+}
+
+body.gelap .kartu {
+  background-color: #243149;
+  color: #F1FAEE;
+  border-color: #526078;
+}
+
+body.gelap table,
+body.gelap th,
+body.gelap td {
+  border-color: #64748B;
+}
+
+body.gelap input,
+body.gelap textarea,
+body.gelap select {
+  background-color: #243149;
+  color: white;
+  border-color: #64748B;
+}
+
+/* Filter kategori proyek */
+.filter-proyek {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.tombol-filter {
+  background-color: #E2E8F0;
+  color: #1D3557;
+  padding: 0.6rem 1rem;
+}
+
+.tombol-filter.aktif {
+  background-color: #1D3557;
+  color: white;
+}
+
+/* Label kategori proyek */
+.label {
+  display: inline-block;
+  background-color: #F1FAEE;
+  color: #1D3557;
+  padding: 0.3rem 0.7rem;
+  border-radius: 6px;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+/* Tampilan kartu proyek */
+#daftar-proyek .kartu {
+  flex: 1 1 280px;
+}
+
+#daftar-proyek img {
+  width: 100%;
+  max-width: 280px;
+  margin: 0.5rem 0;
+}
+
+/* Penghitung karakter */
+#hitung-karakter {
+  display: block;
+  margin-top: 0.4rem;
+  font-size: 0.9rem;
+  color: #666666;
+}
+
+body.gelap #hitung-karakter {
+  color: #F1FAEE;
 }
