@@ -10,6 +10,11 @@ const skills = [
 skills.push({ nama: "JavaScript", level: "Dasar" });
 skills.push({ nama: "UI/UX Design", level: "Pemula" });
 
+// PEMERIKSAAN DATA DI CONSOLE
+console.log("Jumlah keahlian:", skills.length);
+console.log("Daftar keahlian:");
+console.table(skills);
+
 const daftarSkill = document.querySelector("#daftar-skill");
 const jumlahSkill = document.querySelector("#jumlah-skill");
 
@@ -88,6 +93,11 @@ const proyek = [
   }
 ];
 
+// PEMERIKSAAN DATA PROYEK DI CONSOLE
+console.log("Jumlah proyek:", proyek.length);
+console.log("Daftar proyek:");
+console.table(proyek);
+
 // 5. MENAMPILKAN PROYEK
 const daftarProyek = document.querySelector("#daftar-proyek");
 const jumlahProyek = document.querySelector("#jumlah-proyek");
@@ -130,6 +140,9 @@ function pasangFilter(idTombol, kategori) {
       const hasilFilter = proyek.filter(
         (item) => item.kategori === kategori
       );
+
+      console.log(`Hasil filter &{kategori}`)
+      console.table(hasilFilter);
       tampilkanProyek(hasilFilter);
     }
   });
