@@ -156,3 +156,45 @@ if (daftarProyek) {
   pasangFilter("#filter-css", "CSS");
   pasangFilter("#filter-javascript", "JavaScript");
 }
+// 5. Repositori GitHub terbaru (halaman Proyek)
+const username = "floritazahra";
+const alamatRepo = `https://api.github.com/users/${username}/repos`;
+const pilihan = "?sort=updated&per_page=6";
+const daftarRepo = document.querySelector("#daftar-repo");
+const statusRepo = document.querySelector("#status-repo");
+async function ambilRepo() {
+  statusRepo.textContent = "Memuat repositori...";
+
+  try {
+    const response = await fetch(alamatRepo + pilihan);
+
+    if (!response.ok) {
+      throw new Error(`Status ${response.status}`);
+    }
+
+    const repos = await response.json();
+
+    daftarRepo.innerHTML = "";
+
+    repos.forEach(repo => {
+      const item = document.createElement("li");
+      const tautan = document.createElement("a");
+
+      tautan.href = repo.html_url;
+      tautan.textContent = repo.name;
+      tautan.target = "_blank";
+
+      item.appendChild(tautan);
+      daftarRepo.appendChild(item);
+    });
+
+    statusRepo.textContent = `Berhasil memuat ${repos.length} repositori.`;
+
+  } catch (error) {
+    statusRepo.textContent = "Maaf, repositori gagal dimuat.";
+    console.error("Error:", error);
+  }
+}
+if (daftarRepo) {
+  ambilRepo();
+}
