@@ -1,0 +1,31 @@
+
+[
+  {
+    "nama": "HTML",
+    "level": "Menengah"
+  },
+  {
+    "nama": "CSS",
+    "level": "Menengah"
+  },
+  {
+    "nama": "Git dan GitHub",
+    "level": "Dasar"
+  },
+  {
+    "nama": "Desain poster dengan Canva",
+    "level": "Mahir"
+  },
+  {
+    "nama": "JavaScript",
+    "level": "Dasar"
+  },
+  {
+    "nama": "Membuat UI/UX di Figma",
+    "level": "Dasar"
+  },
+  {
+    "nama": "Membuat website dengan Wordpress",
+    "level": "Dasar"
+  }
+]

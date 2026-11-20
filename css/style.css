@@ -336,7 +336,7 @@ body.gelap select {
 }
 
 .tombol-filter.aktif {
-  background-color: #1D3557;
+  background-color: #E63946;
   color: white;
 }
 
@@ -373,5 +373,64 @@ body.gelap select {
 body.gelap #hitung-karakter {
   color: #F1FAEE;
 }
-.tombol-kecil
-class.tersembunyi
+/* Tombol ukuran kecil */
+.tombol-kecil {
+  padding: 0.4rem 0.8rem;
+  font-size: 0.8rem;
+}
+/* Menyembunyikan elemen */
+.tersembunyi {
+  display: none;
+}
+
+.area-proyek {
+  width: 100%;
+}
+
+.filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+#daftar-proyek {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin: 1rem 0 1.5rem;
+}
+
+.kartu-proyek {
+  flex: 1 1 280px;
+  min-width: 0;
+  padding: 1rem;
+  margin-bottom: 0;
+  background-color: #FFFFFF;
+  border: 1px solid #DDDDDD;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.kartu-proyek img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0.5rem 0;
+  border: 1px solid #DDDDDD;
+  border-radius: 8px;
+}
+
+.kartu-proyek h3 {
+  margin-bottom: 0.5rem;
+}
+
+.kartu-proyek p {
+  margin-bottom: 0.75rem;
+}
+
+body.gelap .kartu-proyek {
+  background-color: #243149;
+  color: #F1FAEE;
+  border-color: #526078;
+}
